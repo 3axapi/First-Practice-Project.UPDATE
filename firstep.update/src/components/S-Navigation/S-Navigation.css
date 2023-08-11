@@ -1,0 +1,93 @@
+body {
+    padding-bottom: 1000px;
+}
+
+nav {
+    height: 200px !important;
+    border-bottom: 1px solid black;
+    transition: height 0.35s, background-color 0.35s, font-size 0.35s;
+}
+
+nav:not(.top-menu) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0
+}
+
+.site_container {
+    height: 100%;
+    max-width: 100%;
+}
+
+.navbar-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-menu {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px !important;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: 50%;
+}
+
+.navbar-brand {
+    height: 130px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav::before, .nav::after {
+    display: table;
+    content: " ";
+}
+
+.nav::after {
+    clear: both;
+}
+
+.navPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.navPages li {
+    margin-right: 10px;
+}
+
+.navPages li a {
+    padding: 8px 15px;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navPages li a span {
+    line-height: 1;
+    letter-spacing: 1px;
+    word-spacing: 0px;
+    font-family: Cousine;
+}
